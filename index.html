@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -26,6 +28,10 @@
           <li><a href="https://github.com/prakashrajpoudel/angularjs">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
+      <div ng-controller="MyFirstController">
+        <input type="text" ng-model="name" />
+        {{name}}
+      </div>
       <section>
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
